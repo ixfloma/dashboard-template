@@ -1,6 +1,10 @@
 import { Route } from "@src/typings/routes";
-import homeRoutes from "./HomeRoutes";
+import AuthRoutes from "./Auth";
+import TestRoutes from "./Test";
+import UserRoutes from "./User";
 
-const Routes: Route[] = [...homeRoutes];
+export const MainPageRoute = "/test";
+
+const Routes: Route[] = [...AuthRoutes, ...UserRoutes, ...TestRoutes];
 
 export default Routes;
